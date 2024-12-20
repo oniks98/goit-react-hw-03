@@ -32,7 +32,6 @@ function ContactForm({ onAdd }) {
       name: values.username,
       number: values.phone,
     });
-    console.log('Submitted values:', values);
     actions.resetForm();
   };
 
@@ -53,7 +52,11 @@ function ContactForm({ onAdd }) {
             name="username"
             id={nameFieldId}
           />
-          <ErrorMessage name="username" component="span" />
+          <ErrorMessage
+            name="username"
+            component="span"
+            className={css.spanMessage}
+          />
         </div>
 
         <div>
@@ -66,7 +69,11 @@ function ContactForm({ onAdd }) {
             name="phone"
             id={phoneFieldId}
           />
-          <ErrorMessage name="phone" component="span" />
+          <ErrorMessage
+            name="phone"
+            component="span"
+            className={css.spanMessage}
+          />
         </div>
 
         <button className={css.btn} type="submit">

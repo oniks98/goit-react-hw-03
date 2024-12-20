@@ -24,3 +24,7 @@
 .btn:hover {
   background-color: rgb(176, 176, 236);
 }
+
+.spanMessage {
+  color: red;
+}
